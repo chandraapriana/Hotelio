@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/container_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        style="@style/Margin"
+
+        android:orientation="vertical"
+        tools:context=".HotelDetail">
+
+        <RelativeLayout
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <ImageButton
+                android:id="@+id/btn_back_detail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="@string/hotel_detail"
+                android:textColor="@color/color_primary"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/btn_share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_baseline_share_24" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/container_image_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="25dp"
+
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_hotel_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/hotel7" />
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/name_hotel_detail"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/dummy_name_hotel"
+                android:textColor="@color/color_primary"
+                android:textSize="24sp"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/name_hotel_detail"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/star_hotel_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/dummy_star"
+                    android:textColor="@color/color_star"
+                    android:textSize="24sp"
+                    app:drawableLeftCompat="@drawable/ic_star_detail" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/address_hotel_detail"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/dummy_address"
+            android:textColor="@color/color_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phone_hotel_detail"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/dummy_phone"
+            android:textColor="@color/color_primary"
+            app:drawableLeftCompat="@drawable/ic_baseline_phone_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/facilities"
+            android:textColor="@color/color_primary"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:id="@+id/wifi_facility_hotel_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_wifi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wifi_facility_hotel_detail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Wifi"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/tv_facility_hotel_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_tv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_facility_hotel_detail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="TV"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/bed_facility_hotel_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_bed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bed_facility_hotel_detail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Bed"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/breakfast_facility_hotel_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_eat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/breakfast_facility_hotel_detail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Eat"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/shower_facility_hotel_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_bath" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shower_facility_hotel_detail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Bath"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/ac_facility_hotel_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_ac" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ac_facility_hotel_detail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="AC"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/description"
+            android:textColor="@color/color_primary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/description_hotel_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/dummy_desc"
+            android:textColor="@color/color_secondary"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_fav"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_round_outline"
+                app:backgroundTint="#E3E3E8"
+                app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+
+            <Button
+                android:id="@+id/btn_book"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/btn_fav"
+                android:layout_toRightOf="@+id/btn_fav"
+                android:background="@drawable/btn_round_outline"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/dummy_price"
+                android:textSize="20sp"
+                app:backgroundTint="@color/color_primary" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Hotelio</string>
+    <string name="headline">Let’s Explorer the best hotel</string>
+    <string name="logo_name">Hotelio</string>
+    <string name="email">A2992717@bangkit.academy</string>
+    <string name="name">Chandra Muhamad Apriana</string>
+    <string name="dummy_desc">Embrace the new normal and rediscover the tranquil beauty of Bali, with this three-day working vacation in Canggu. Combining luxury accommodation with great business facilities, attentive service, daily encounters and a range of additional discounts available, Plataran Canggu Bali welcomes you to indulge in a little rest and recuperation alongside your working responsibilities. With floating breakfast, picnics, daily dining and photography session in traditional Balinese attire all included, this is sure to be a productive, memorable and heavenly stay on the Island of the Gods.</string>
+    <string name="dummy_price">$45 per night</string>
+    <string name="description">Description</string>
+    <string name="dummy_address">Jalan Pengubugan Banjar, Jl. Silayukti, Kerobokan, Kec. Kuta Utara, Kabupaten Badung, Bali 80361</string>
+    <string name="dummy_phone">(0361) 411388</string>
+    <string name="facilities">Facilities</string>
+    <string name="dummy_star">5.0</string>
+    <string name="dummy_name_hotel"><![CDATA[Plataran Canggu Bali Resot & SPA]]></string>
+    <string name="hotel_detail">Hotel Detail</string>
+
+    <integer-array name="hotel_price">
+        <item>35</item>
+        <item>40</item>
+        <item>48</item>
+        <item>50</item>
+        <item>45</item>
+        <item>35</item>
+        <item>42</item>
+        <item>40</item>
+        <item>48</item>
+        <item>42</item>
+    </integer-array>
+    <string-array name="hotel_star">
+        <item>5.0</item>
+        <item>4.5</item>
+        <item>4.3</item>
+        <item>4.2</item>
+        <item>4.5</item>
+        <item>4.7</item>
+        <item>4.5</item>
+        <item>4.4</item>
+        <item>4.4</item>
+        <item>4.7</item>
+    </string-array>
+    <string-array name="hotel_city">
+        <item>Kuta Utara, Badung</item>
+        <item>Denpasar Utara, Denpasar</item>
+        <item>Denpasar Selatan, Denpasar</item>
+        <item>Kuta utara, Badung</item>
+        <item>Denpasar Utara, Denpasar</item>
+        <item>Sawah Besar, Jakarta Pusat</item>
+        <item>Soreang, Bandung</item>
+        <item>Buah Batu, Bandung</item>
+        <item>Sukasari, Bandung</item>
+        <item>Arcamanik, Bandung</item>
+    </string-array>
+    <!--    <string-array name="">-->
+    <!--        <item></item>-->
+    <!--        <item></item>-->
+    <!--        <item></item>-->
+    <!--        <item></item>-->
+    <!--        <item></item>-->
+    <!--        <item></item>-->
+    <!--        <item></item>-->
+    <!--        <item></item>-->
+    <!--        <item></item>-->
+    <!--        <item></item>-->
+    <!--    </string-array>-->
+</resources>

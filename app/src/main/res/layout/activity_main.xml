@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        style="@style/Margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logo_name"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:drawablePadding="5dp"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_logo" />
+
+            <ImageButton
+                android:id="@+id/btn_about"
+                android:layout_width="40dp"
+                android:layout_centerVertical="true"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/me"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="top"
+            android:text="@string/headline"
+            android:textColor="@color/color_primary"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headline"
+            android:paddingBottom="25dp"
+
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+</ScrollView>
