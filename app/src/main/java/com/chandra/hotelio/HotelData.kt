@@ -2,8 +2,8 @@ package com.chandra.hotelio
 
 object HotelData {
     private val hotelName = arrayOf(
-        "Plataran Canggu Bali Resort & Spa",
-        "Aston Denpasar Hotel & Convention",
+        "Plataran Canggu Bali Resort",
+        "Aston Denpasar Hotel",
         "Prime Plaza Hotel Sanur",
         "Tapa Tepi Kali By Pramana",
         "Menteng Park Exclusive Emerald",
